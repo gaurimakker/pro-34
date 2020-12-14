@@ -1,4 +1,4 @@
-var dog, happyDog, database;
+var dog, database;
 var foodS, foodStock
 var dogImg, dogImg1
 
@@ -26,15 +26,15 @@ function draw() {
 
   if(keyWentDown(UP_ARROW)){
     writeStock(foodS);
-    dog.addImage(dogImg1)
-    dog.scale=0.5;
+    dog.addImage("dog" ,dogImg1)
+    dog.scale=0.2;
   }
 
   drawSprites();
 
   textSize(20);
   fill("black");
-  text("FoodStock:"+foodStock, 10,100);
+  text("FoodStock:"+foodS, 150,100);
   text("Note: Press up arrow to feed dog!",150,150);
 }
 
